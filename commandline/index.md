@@ -1,11 +1,13 @@
+# Comma Separated Files (CSVs)
+
+For this tutorial, we are using the [Public School Characteristics 2020-21](https://catalog.data.gov/dataset/public-school-characteristics-2020-21) from the National Center of Education Statistics via Data.gov. [This link](https://data-nces.opendata.arcgis.com/datasets/nces::public-school-characteristics-2020-21.csv?outSR=%7B%22latestWkid%22%3A4326%2C%22wkid%22%3A4326%7D) should download the csv to your machine. Note where the downloaded file went on your machine, as you will need to know the file path of the CSV in order to successfully import it.
+
 # The Unix/Linux/MacOS Terminal
 
 **Note** The instructions here will not apply to a windows machine unless [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) has been properly installed and configured. For instructions on how to do the same functions using Windows Cmd and Windows PowerShell, please view that section.
 
 
 All users of all skill levels are able to use the terminal in order to inspect and prepare data that is in Comma Separated Values (csv) format. We would use the terminal in situations where we havea CSV that we want to inspect quickly before deciding our next steps for data cleaning. Using the terminal allows us to better choose the tools that we would like to use for further data wrangling. If I have a CSV, I like to start with the terminal before 
-
-For this tutorial, we are using the [Public School Characteristics 2020-21](https://catalog.data.gov/dataset/public-school-characteristics-2020-21) from the National Center of Education Statistics via Data.gov. [This link](https://data-nces.opendata.arcgis.com/datasets/nces::public-school-characteristics-2020-21.csv?outSR=%7B%22latestWkid%22%3A4326%2C%22wkid%22%3A4326%7D) should download the csv to your machine.
 
 For this example, we want to see the first two rows of data within the CSV. In order to do this, we will type the command ```head -n 2 Public_School_Characteristics_202-21.csv```. **Important** In order for this command to work, we have to navigate to the folder which contains the CSV. Depending on how your downloads are configured, this means navigating to the folder where the CSV was downloaded.  As an example, we change directory to Downloads run the command:
 
@@ -28,3 +30,44 @@ The following command will let us see the final row of the CSV.
 The row will look like this:
 
 ```-64.8903109999999,18.31823,101662,780003000034,2020-2021,VI,7800030,VI-001,Saint Thomas - Saint John School District,BERTHA BOSCHULTE JUNIOR HIGH,9 1 and 12A BOVONI,,Saint Thomas,VI,00802,    ,(340)775-4222,06,08,Full Virtual,574,574,0,,,,,,,,190,191,196,,,,,,577,577,,55,516,2,,,47,18.31823,-64.890311,33-Town: Remote,St. Thomas Island,12.28,1-Yes,1-Yes,,,4,,25,30,269,247,1,1,,,,,,,1,,,Regular school,Currently operational ,Middle,4,N,No```
+
+## R
+
+Using the same file, we are going to use R to read in the CSV, and see what kind of data we are working with. This section assumes you have some familiarity with R, and already have it installed on your machine.
+
+### tidyverse
+
+The R package tidyverse is the first recommended way to do this, as it is an incredible versatile package for data importing and data wrangling. First, we need to install and load the package.
+
+```install.packages("tidyverse")```
+```library(tidyverse)```
+
+**Note: It is common to get errors like 
+```Error: package or namespace load failed for ‘tidyverse’ in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]): namespace ‘rlang’ 0.3.0.1 is already loaded, but >= 0.3.1 is required```
+when loading a library for the first time. Copying and pasting the error into Google or Stack Overflow will typically give a quick solution - for example, [here](https://stackoverflow.com/questions/55415631/error-package-or-namespace-load-failed-for-tidyverse-in-loadnamespace) is the Stack Overflow post to solve this issue**
+
+Once tidyverse is loaded into our R terminal, we can use [read_csv()](https://readr.tidyverse.org/reference/read_delim.html) to pull our data into a tibble. We can do this using the URL of the CSV directly in this instance.
+
+```r
+schools <- read_csv("https://data-nces.opendata.arcgis.com/datasets/nces::public-school-characteristics-2020-21.csv?outSR=%7B%22latestWkid%22%3A4326%2C%22wkid%22%3A4326%7D")
+```
+
+This gives us the following output:
+
+```r
+Rows: 100722 Columns: 79
+── Column specification ─────────────────────────────────────────────────────────────────────────────────
+Delimiter: ","
+chr (26): NCESSCH, SURVYEAR, STABR, LEAID, ST_LEAID, LEA_NAME, SCH_NAME, LST...
+dbl (51): X, Y, OBJECTID, TOTFRL, FRELCH, REDLCH, PK, KG, G01, G02, G03, G04...
+lgl  (2): TOTMENROL, TOTFENROL
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+```
+
+## Python
+
+Now let's do this again but with Python. This section assumes you have some familiarity with Python, and already have it installed on your machine.
+
+### pandas 

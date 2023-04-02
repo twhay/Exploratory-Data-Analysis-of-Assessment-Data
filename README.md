@@ -13,9 +13,10 @@ This repository will be used as both a reference document and tutorial for to da
 
 ### Table of Contents
 
-[Comma Separated Values](csv/index.md)
-Spreadsheets
-Relational Databases
-Websites
-Portable Document Format (PDF)
+1. [Comma Separated Values](csv/index.md)
+2. Spreadsheets
+3.  Portable Document Format (PDF)
+4. Relational Databases
+5. Websites
+
 

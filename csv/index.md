@@ -1,19 +1,19 @@
 # Comma Separated Values (CSVs)
 
-[Preamble](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#preamble)
-[Data Set](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#data-set)
-[The Unix/Linux/MacOS Terminal](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#the-unixlinuxmacos-terminal)
-[Excel](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#excel)
-[Google Sheets](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#excel)
-[R](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#r)
-[Python](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#python)
-[Tableau](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#tableau)
-[PowerBI](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#powerbi)
-[Relational Databases](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#relational-databases)
+1. [Preamble](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#preamble)
+2. [Data Set](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#data-set)
+3. [The Unix/Linux/MacOS Terminal](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#the-unixlinuxmacos-terminal)
+4. [Excel](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#excel)
+5. [Google Sheets](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#excel)
+6. [R](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#r)
+7. [Python](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#python)
+8. [Tableau](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#tableau)
+9. [PowerBI](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#powerbi)
+10. [Relational Databases](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#relational-databases)
 
 ## Preamble
 
-A comma separate value is a file format in which the values are separated by a comma. Due to many data requiring the use of commas, there are formats which allow for a comma to be used as part of the file format like using a semi-colon ; instead or using a tab separated file (TSV). This section will address all of these, though we will work with the above data set 
+A comma separate value is a file format in which the values are separated by a comma. Due to many data requiring the use of commas, there are formats which allow for a comma to be used as part of the file format like using a semi-colon ; instead or using a tab separated file (TSV). This section will address all of these, though we will work with the below data set.
 
 ## Data Set
 
@@ -52,6 +52,18 @@ The row will look like this:
 
 ## Google Sheets
 
+Importing a CSV into Google Sheets relies upon Google's built-in tooling to conver the CSV to a Google Sheet.
+
+1. Download the CSV locally to your computer
+2. Go to sheets.google.com and login into your google account
+3. Create new spreadsheet
+4. In that spreadsheet go to File -> Import
+5. Go to the upload tab and either find the CSV on your computer or drag and drop it from a file explorer
+6. Choose the location to save the CSV as a spreadsheet and the separator type
+7. Refresh the page once the upload is complete and find your uploaded CSV as a Google Sheet
+
+Advantages: Google Workspace
+Disadvantages: You are at the mercy of Google's cell limits for imported into Google Drive, which as of late March 2023 were " [Up to 10 million cells or 18,278 columns for spreadsheets imported from Microsoft Excel. The limits are the same for Excel and CSV imports.](https://support.google.com/drive/answer/37603)
 
 ## R
 

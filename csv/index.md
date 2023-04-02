@@ -57,12 +57,14 @@ Importing a CSV into Google Sheets relies upon Google's built-in tooling to conv
 1. Download the CSV locally to your computer
 2. Go to sheets.google.com and login into your google account
 3. Create new spreadsheet
-4. In that spreadsheet go to File -> Import
+4. In that spreadsheet go to File -> Import ![alt text](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/images/google-sheets-file-menu-import.png "Logo Title Text 1")
+
 5. Go to the upload tab and either find the CSV on your computer or drag and drop it from a file explorer
 6. Choose the location to save the CSV as a spreadsheet and the separator type
 7. Refresh the page once the upload is complete and find your uploaded CSV as a Google Sheet
 
-Advantages: Google Workspace
+Advantages: Google Workspace stores your CSV and any associated history (version control)
+
 Disadvantages: You are at the mercy of Google's cell limits for imported into Google Drive, which as of late March 2023 were " [Up to 10 million cells or 18,278 columns for spreadsheets imported from Microsoft Excel. The limits are the same for Excel and CSV imports.](https://support.google.com/drive/answer/37603)
 
 ## R

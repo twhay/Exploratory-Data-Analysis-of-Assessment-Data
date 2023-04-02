@@ -1,15 +1,15 @@
 # Comma Separated Values (CSVs)
 
-[Preamble](## Preamble)
-[Data Set](## Data Set)
-[The Unix/Linux/MacOS Terminal]
-[Excel](## Excel)
-[Google Sheets](## Google Sheets)
-[R](## R)
-[Python](## Python)
-[Tableau](## Tableau)
-[PowerBI](## PowerBI)
-[Relational Databases](## Relational Databases)
+[Preamble](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#preamble)
+[Data Set](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#data-set)
+[The Unix/Linux/MacOS Terminal](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#the-unixlinuxmacos-terminal)
+[Excel](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#excel)
+[Google Sheets](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#excel)
+[R](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#r)
+[Python](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#python)
+[Tableau](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#tableau)
+[PowerBI](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#powerbi)
+[Relational Databases](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/index.md#relational-databases)
 
 ## Preamble
 

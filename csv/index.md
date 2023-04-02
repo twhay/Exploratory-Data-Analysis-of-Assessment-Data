@@ -1,8 +1,25 @@
-# Comma Separated Files (CSVs)
+# Comma Separated Values (CSVs)
+
+[Preamble](## Preamble)
+[Data Set](## Data Set)
+[The Unix/Linux/MacOS Terminal]
+[Excel](## Excel)
+[Google Sheets](## Google Sheets)
+[R](## R)
+[Python](## Python)
+[Tableau](## Tableau)
+[PowerBI](## PowerBI)
+[Relational Databases](## Relational Databases)
+
+## Preamble
+
+A comma separate value is a file format in which the values are separated by a comma. Due to many data requiring the use of commas, there are formats which allow for a comma to be used as part of the file format like using a semi-colon ; instead or using a tab separated file (TSV). This section will address all of these, though we will work with the above data set 
+
+## Data Set
 
 For this tutorial, we are using the [Public School Characteristics 2020-21](https://catalog.data.gov/dataset/public-school-characteristics-2020-21) from the National Center of Education Statistics via Data.gov. [This link](https://data-nces.opendata.arcgis.com/datasets/nces::public-school-characteristics-2020-21.csv?outSR=%7B%22latestWkid%22%3A4326%2C%22wkid%22%3A4326%7D) should download the csv to your machine. Note where the downloaded file went on your machine, as you will need to know the file path of the CSV in order to successfully import it.
 
-# The Unix/Linux/MacOS Terminal
+## The Unix/Linux/MacOS Terminal
 
 **Note** The instructions here will not apply to a windows machine unless [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) has been properly installed and configured. For instructions on how to do the same functions using Windows Cmd and Windows PowerShell, please view that section.
 
@@ -30,6 +47,11 @@ The following command will let us see the final row of the CSV.
 The row will look like this:
 
 ```-64.8903109999999,18.31823,101662,780003000034,2020-2021,VI,7800030,VI-001,Saint Thomas - Saint John School District,BERTHA BOSCHULTE JUNIOR HIGH,9 1 and 12A BOVONI,,Saint Thomas,VI,00802,    ,(340)775-4222,06,08,Full Virtual,574,574,0,,,,,,,,190,191,196,,,,,,577,577,,55,516,2,,,47,18.31823,-64.890311,33-Town: Remote,St. Thomas Island,12.28,1-Yes,1-Yes,,,4,,25,30,269,247,1,1,,,,,,,1,,,Regular school,Currently operational ,Middle,4,N,No```
+
+## Excel
+
+## Google Sheets
+
 
 ## R
 
@@ -71,3 +93,7 @@ lgl  (2): TOTMENROL, TOTFENROL
 Now let's do this again but with Python. This section assumes you have some familiarity with Python, and already have it installed on your machine.
 
 ### pandas 
+
+## Tableau
+## PowerBI
+## Relational Databases

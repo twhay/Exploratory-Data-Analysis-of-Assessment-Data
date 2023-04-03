@@ -57,9 +57,9 @@ Importing a CSV into Google Sheets relies upon Google's built-in tooling to conv
 1. Download the CSV locally to your computer
 2. Go to sheets.google.com and login into your google account
 3. Create new spreadsheet
-4. In that spreadsheet go to File -> Import ![alt text](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/images/google-sheets-file-menu-import.png "Google Sheets File Menu clicking on the Import menu" )
+4. In that spreadsheet go to File -> Import <img src=https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/images/google-sheets-file-menu-import.png width=50% height=50% alt="sheets file menu" title="Google Sheets File Menu clicking on the Import menu">  
 
-5. Go to the upload tab and either find the CSV on your computer or drag and drop it from a file explorer ![alt text](https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/images/google-sheets-import-upload.png "Google Sheets Import Upload browser" )
+5. Go to the upload tab and either find the CSV on your computer or drag and drop it from a file explorer <img src=https://github.com/twhay/data-wrangling-toolkit/blob/master/csv/images/google-sheets-import-upload.png width=50% height=50% alt="sheets import browser" title="Google Sheets Import Upload browser"> 
 6. Choose the location to save the CSV as a spreadsheet and the separator type
 7. Refresh the page once the upload is complete and find your uploaded CSV as a Google Sheet
 

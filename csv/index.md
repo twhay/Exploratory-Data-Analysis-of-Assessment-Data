@@ -48,6 +48,12 @@ The row will look like this:
 
 ```-64.8903109999999,18.31823,101662,780003000034,2020-2021,VI,7800030,VI-001,Saint Thomas - Saint John School District,BERTHA BOSCHULTE JUNIOR HIGH,9 1 and 12A BOVONI,,Saint Thomas,VI,00802,    ,(340)775-4222,06,08,Full Virtual,574,574,0,,,,,,,,190,191,196,,,,,,577,577,,55,516,2,,,47,18.31823,-64.890311,33-Town: Remote,St. Thomas Island,12.28,1-Yes,1-Yes,,,4,,25,30,269,247,1,1,,,,,,,1,,,Regular school,Currently operational ,Middle,4,N,No```
 
+## PowerShell
+
+[Import-Csv](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/import-csv?view=powershell-7.3) is the cmdlet that will allow a Windows user to import a CSV into an object and begin inspecting it.
+
+[Table of Basic PowerShell Commands](https://devblogs.microsoft.com/scripting/table-of-basic-powershell-commands/)
+
 ## Excel
 
 ## Google Sheets
